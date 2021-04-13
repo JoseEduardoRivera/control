@@ -1,0 +1,42 @@
+
+enum EstatusRegistro {
+	ACTIVO, DESACTIVADO
+}
+
+enum Estatus{
+	ACTIVO, CANCELADO, COMPLETADO, DESACTIVADO
+}
+
+entity Maestro {
+	idMaestro String required unique
+    maestro String required
+    estatus EstatusRegistro required
+}
+
+entity Materia {
+	idMateria String required unique
+    materia String required
+    abreviatura String required
+    estatus EstatusRegistro required
+}
+
+entity Alumno {
+	idAlumno String required unique
+    alumno String required
+    estatus EstatusRegistro required
+}
+
+relationship OneToMany {
+Materia{Alumno(idMateria)} to Alumno{Materia(idMateria)}
+}
+// Set pagination options
+paginate all with pagination
+
+// Use Data Transfer Objects (DTO)
+dto * with mapstruct
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl 
+
+filter all

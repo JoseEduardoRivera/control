@@ -1,0 +1,26 @@
+{
+  "controlApp": {
+    "maestro": {
+      "home": {
+        "title": "Maestros",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Maestro",
+        "createOrEditLabel": "Crear o editar Maestro",
+        "notFound": "Ningún Maestros encontrado"
+      },
+      "created": "Un nuevo Maestro ha sido creado con el identificador {{ param }}",
+      "updated": "Un Maestro ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Maestro ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Maestro {{ id }}?"
+      },
+      "detail": {
+        "title": "Maestro"
+      },
+      "id": "ID",
+      "idMaestro": "Id Maestro",
+      "maestro": "Maestro",
+      "estatus": "Estatus"
+    }
+  }
+}

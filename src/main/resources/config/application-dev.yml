@@ -33,8 +33,8 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:sqlserver://localhost:1433;database=control
-    username: SA
-    password: yourStrong(!)Password
+    username: pp
+    password: monreal.2021
     hikari:
       poolName: Hikari
       auto-commit: false

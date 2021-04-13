@@ -1,0 +1,45 @@
+{
+  "name": "Materia",
+  "fields": [
+    {
+      "fieldName": "idMateria",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "materia",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "abreviatura",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "estatus",
+      "fieldType": "EstatusRegistro",
+      "fieldValues": "ACTIVO,DESACTIVADO",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "alumno",
+      "otherEntityRelationshipName": "materia",
+      "relationshipName": "alumno",
+      "otherEntityField": "idMateria"
+    }
+  ],
+  "entityTableName": "materia",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210412150348"
+}

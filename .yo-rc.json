@@ -42,7 +42,9 @@
     "jwtSecretKey": "NjJlMzQxMjc5NDMxZjYwNTI3MTQzZTU3ZDIwMjRmNDZjYmFmMTBhMDQ0YjljNGU4YjdiMjZlMzcxNmUwMzY4OTIxN2IwMmFiMDk1NjkwNTFmOGJjYjcwY2YwMzk0ZmMzMzA1ZmM1ZDRlMTRhMTExMmIwNTdmMTljZTJkNzQ5Njk=",
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "reactive": false
+    "reactive": false,
+    "entities": ["Maestro", "Materia", "Alumno"],
+    "lastLiquibaseTimestamp": 1618239829000
   },
   "git-provider": "GitHub",
   "git-company": "JoseEduardoRivera",

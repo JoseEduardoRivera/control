@@ -1,0 +1,40 @@
+{
+  "name": "Alumno",
+  "fields": [
+    {
+      "fieldName": "idAlumno",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "alumno",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "estatus",
+      "fieldType": "EstatusRegistro",
+      "fieldValues": "ACTIVO,DESACTIVADO",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "materia",
+      "otherEntityRelationshipName": "alumno",
+      "relationshipName": "materia",
+      "otherEntityField": "idMateria"
+    }
+  ],
+  "entityTableName": "alumno",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210412150349"
+}
